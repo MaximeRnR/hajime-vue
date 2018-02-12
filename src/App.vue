@@ -59,11 +59,18 @@ export default {
     border-collapse: collapse;
     border-spacing: 0;
   }
+
+  @font-face {
+    font-family: "Bebas Neue";
+    src: url("./assets/font/BebasNeue-Regular.ttf") format("woff2");
+  }
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+
 }
 </style>
