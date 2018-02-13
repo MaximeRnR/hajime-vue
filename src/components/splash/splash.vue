@@ -73,7 +73,7 @@
         top: 0;
         width: 50%;
         height: 60%;
-        background: #4BC0C8;
+        background: #C779D0;
         border-radius: 5px;
         will-change: transform, opacity;
         opacity: 0;
@@ -88,8 +88,8 @@
         transform: translateY(-100%);
         animation: 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1s 1 slideInFromTop forwards;
         background: #FEAC5E; /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, #4BC0C8, #C779D0, #FEAC5E); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: -webkit-linear-gradient(to top,  #C779D0, #C779D0, #FEAC5E); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #C779D0, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
     #svg-one {
