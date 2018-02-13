@@ -42,7 +42,26 @@
                         </feMerge>
                     </filter>
                 </svg>
-                <div id="splash-gradient-two" ></div>
+                <div id="splash-gradient-two">
+                    <div>
+                        <div id="icon-container">
+                            <span></span>
+                            <div class="icon">
+                                <div>Conversational Interface</div>
+                                <img src="../../assets/img/doctor-icon-white.png"/></div>
+                            <div class="icon">
+                                <div>Medical Expertise</div>
+                                <img src="../../assets/img/doctor-icon-white.png"/></div>
+                            <div class="icon">
+                                <div>Machine learning</div>
+                                <img src="../../assets/img/doctor-icon-white.png"/></div>
+                            <div class="icon">
+                                <div>Data</div>
+                                <img src="../../assets/img/doctor-icon-white.png"/></div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -63,14 +82,14 @@
 <style scoped>
 
     #splash-component {
+        display: flex;
+        flex-direction: column;
+        position: relative;
         width: 100vw;
         height: 100vh;
     }
 
-
     #splash-form-one {
-        position: relative;
-        top: 0;
         width: 50%;
         height: 60%;
         background: #C779D0;
@@ -88,7 +107,7 @@
         transform: translateY(-100%);
         animation: 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1s 1 slideInFromTop forwards;
         background: #FEAC5E; /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top,  #C779D0, #C779D0, #FEAC5E); /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to top, #C779D0, #C779D0, #FEAC5E); /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to top, #C779D0, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
@@ -103,10 +122,8 @@
     }
 
     #splash-form-two {
-        position: absolute;
-        bottom: 0;
         width: 100%;
-        height: 55%;
+        height: 40%;
         will-change: transform, opacity;
         transform: translateY(100%);
         opacity: 0;
@@ -119,14 +136,18 @@
         height: 100%;
         will-change: transform;
         background: #C779D0;
+        overflow-Y: hidden;
     }
 
-    #splash-gradient-two{
+    #splash-gradient-two {
+        position: absolute;
+        top: 0;
+        z-index: -10;
         width: 100%;
         height: 100%;
         animation: 2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s 1 slideInFromBottom forwards;
         background: #FEAC5E; /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, #FEAC5E,  #C779D0); /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to top, #FEAC5E, #C779D0); /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to top, #FEAC5E, #C779D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
@@ -152,6 +173,34 @@
         line-height: 26.4px;
         opacity: 0;
         animation: 2s cubic-bezier(0.215, 0.61, 0.355, 1) 1s 1 slideInFromTopWithOpacity forwards;
+    }
+
+    #icon-container {
+        width: 100%;
+        height: 80%;
+        margin-top: 8%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #FFF;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 500;
+        line-height: 26.4px;
+        opacity: 0;
+        animation: 2s cubic-bezier(0.215, 0.61, 0.355, 1) 1s 1 slideInFromBottomWithOpacity forwards;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    img {
+        width: 250px;
     }
 
     #qualities {
