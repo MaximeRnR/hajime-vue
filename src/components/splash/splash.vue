@@ -26,7 +26,7 @@
             </svg>
         </div>
         <div id="splash-form-two">
-            <div id="splash-gradient-two">
+            <div id="splash-container">
                 <svg id="svg-two" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <polygon filter="url(#dropshadow-two)" fill="white" points="0,0 0,75 100,75 100,0 "/>
                     <filter id="dropshadow-two" height="130%">
@@ -42,7 +42,7 @@
                         </feMerge>
                     </filter>
                 </svg>
-                <div id="splash-gradient-in" ></div>
+                <div id="splash-gradient-two" ></div>
             </div>
 
         </div>
@@ -114,17 +114,17 @@
         border-radius: 5px;
     }
 
-    #splash-gradient-two {
+    #splash-container {
         width: 100%;
         height: 100%;
         will-change: transform;
         background: #C779D0;
     }
 
-    #splash-gradient-in{
+    #splash-gradient-two{
         width: 100%;
         height: 100%;
-        animation: 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1s 1 slideInFromBottom forwards;
+        animation: 2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s 1 slideInFromBottom forwards;
         background: #FEAC5E; /* fallback for old browsers */
         background: -webkit-linear-gradient(to top, #FEAC5E,  #C779D0); /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to top, #FEAC5E, #C779D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
