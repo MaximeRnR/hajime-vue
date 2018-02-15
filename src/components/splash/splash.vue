@@ -48,22 +48,29 @@
                             <span></span>
                             <div class="icon">
                                 <div>Conversational Interface</div>
-                                <img src="../../assets/img/doctor-icon-white.png"/></div>
+                                <img class="icon-img" src="../../assets/img/speech-bubble.png"/>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. </p>
+                            </div>
                             <div class="icon">
                                 <div>Medical Expertise</div>
-                                <img src="../../assets/img/doctor-icon-white.png"/></div>
+                                <img class="icon-img" src="../../assets/img/doctor-icon-white.png"/>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. </p>
+                            </div>
                             <div class="icon">
                                 <div>Machine learning</div>
-                                <img src="../../assets/img/doctor-icon-white.png"/></div>
+                                <img class="icon-img" src="../../assets/img/ml.png"/>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. </p>
+                            </div>
                             <div class="icon">
                                 <div>Data</div>
-                                <img src="../../assets/img/doctor-icon-white.png"/></div>
+                                <img class="icon-img" src="../../assets/img/data-encryption.png"/>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. </p>
+                            </div>
                             <span></span>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </template>
@@ -122,8 +129,11 @@
     }
 
     #splash-form-two {
+        position: absolute;
+        bottom: 0;
         width: 100%;
-        height: 40%;
+        height: 55%;
+        overflow: hidden;
         will-change: transform, opacity;
         transform: translateY(100%);
         opacity: 0;
@@ -162,7 +172,7 @@
         flex-direction: row;
         justify-content: flex-start;
         position: relative;
-        top: 32%;
+        top: 24%;
         margin-left: 16px;
         color: #FFF;
         font-family: "Bebas Neue", sans-serif;
@@ -184,7 +194,7 @@
         justify-content: space-between;
         color: #FFF;
         font-family: "Bebas Neue", sans-serif;
-        font-size: 48px;
+        font-size: 24px;
         font-style: normal;
         font-variant: normal;
         font-weight: 500;
@@ -197,10 +207,30 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        width: 20%;
+        height: 100%;
     }
 
-    img {
-        width: 250px;
+    .icon div {
+        margin-bottom: 4%;
+    }
+
+    .icon-img {
+        width: 50%;
+        height: 50%;
+        margin-bottom: 4%;
+    }
+
+    .icon p {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 500;
+        line-height: 26.4px;
+        text-align: center;
     }
 
     #qualities {

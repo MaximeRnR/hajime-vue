@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <splash></splash>
-    <div>YOOOOOOOOOO</div>
   </div>
 </template>
 
